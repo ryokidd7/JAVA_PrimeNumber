@@ -9,5 +9,14 @@ class Prime {
 		for(int i = 0; i < max; i++)
 			a[i] = true;
 
+		//素数かどうか判定
+		for(int i = 2; i < max; i++) {
+			if(a[i-1]) {
+				for(int j =2; i*j <= max; j++)
+					a[i * j - 1] = false;
+			}
+		}
+
+
 	}
 }
