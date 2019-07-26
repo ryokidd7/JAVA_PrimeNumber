@@ -17,6 +17,11 @@ class Prime {
 			}
 		}
 
-
+		//結果を表示
+		for(int i = 1; i < max; i++) {
+			if(a[i])
+				System.out.print((i + 1) + " ");
+		}
+		System.out.println();
 	}
 }
